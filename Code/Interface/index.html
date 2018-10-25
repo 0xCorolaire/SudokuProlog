@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html
+    ; charset=UTF-8" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" type='text/css' />
+    <title>Sudoku - IA02</title>
+  </head>
+  <body>
+    <div class="mx-auto" style="width: 200px;">
+      <h1 class="display-1"> Sudoku </h1>
+    </div>
+    <div class='container'>
+      <!-- Program -->
+      <!-- Name -->
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Sudoku a résoudre</span>
+        </div>
+        <textarea class="form-control" aria-label="With textarea" type="text" id="matrice_incomplete" value="[
+        [_,_,_,_,_,_,_,_,_],
+        [_,_,_,_,_,_,_,_,_],
+        [_,_,_,_,_,_,_,_,_],
+        [_,_,_,_,_,_,_,_,_],
+        [_,_,_,_,_,_,_,_,_],
+        [_,_,_,_,_,_,_,_,_],
+        [_,_,_,_,_,_,_,_,_],
+        [_,_,_,_,_,_,_,_,_],
+        [_,_,_,_,_,_,_,_,_]
+        ]">[_,_,_,_,_,_,_,_,_],
+        [_,_,_,_,_,_,_,_,_],
+        [_,_,_,_,_,_,_,_,_],
+        [_,_,_,_,_,_,_,_,_],
+        [_,_,_,_,_,_,_,_,_],
+        [_,_,_,_,_,_,_,_,_],
+        [_,_,_,_,_,_,_,_,_],
+        [_,_,_,_,_,_,_,_,_],
+        [_,_,_,_,_,_,_,_,_]
+        ]
+        </textarea>
+      </div>
+      <!-- Button -->
+      <input class="btn btn-success" type="button" value="Resultat" id="buttonres" onclick="clickButtonRes()"></button>
+      <input clas="btn btn-primary" type="button" value="Générer une grille incomplète" id="buttoninc" onclick="clickButtonInc()"></button>
+
+      <!-- Answers -->
+      <div class="sudoku-result" id="result"></div>
+    </div>
+    <script src="./theme/tau-prolog.js"></script>
+    <script src="sudoku.js" id="sudoku.pl" type="text/prolog"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
